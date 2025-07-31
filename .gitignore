@@ -1,0 +1,12 @@
+# Rust build
+/target/
+**/*.rs.bk
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
