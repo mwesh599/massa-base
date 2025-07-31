@@ -1,12 +1,35 @@
-# Rust build
-/target/
-**/*.rs.bk
+# Ignore OS-specific files
+Thumbs.db
+.DS_Store
+ehthumbs.db
+desktop.ini
 
-# Editor and system files
+# Ignore node and client logs or config backups
+logs/
+*.log
+*.bak
+
+# Ignore any compiled binaries or temporary files
+*.exe
+*.dll
+*.out
+*.tmp
+
+# Ignore massa-specific user data files
+massa-node/config/
+massa-client/config/
+massa-node/databases/
+massa-client/databases/
+massa-node/logs/
+massa-client/logs/
+massa-node/peers.json
+massa-client/wallet.dat
+
+# Ignore environment variables
+.env
+
+
+# Ignore VSCode and other IDE files
 .vscode/
 .idea/
-.DS_Store
-Thumbs.db
-
-# Git
-.git/
+*.code-workspace
